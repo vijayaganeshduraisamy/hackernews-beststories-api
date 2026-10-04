@@ -76,6 +76,36 @@ tests/
 - Retries, timeouts and a circuit breaker on the HTTP client.
 - If a refresh fails, the last good list is served. A single failed story is skipped.
 
+## Configuration
+ 
+Settings live in `appsettings.json` and are validated on startup.
+ 
+```json
+{
+  "HackerNewsApi": {
+    "BaseUrl": "https://hacker-news.firebaseio.com/v0/",
+    "StoriesPath": "beststories.json",
+    "ItemPathFormat": "item/{0}.json"
+  },
+  "BestStories": {
+    "MaxStoriesToFetch": 200,
+    "MaxConcurrentRequests": 8,
+    "BestStoriesCacheDuration": "00:01:00",
+    "StoryCacheDuration": "00:05:00"
+  }
+}
+```
+ 
+| Setting | Description |
+|---------|-------------|
+| `BaseUrl` | Hacker News API base address |
+| `StoriesPath` | Path of the best stories id list |
+| `ItemPathFormat` | Path of a single item (`{0}` is the story id) |
+| `MaxStoriesToFetch` | Largest `n` accepted (Hacker News returns at most 200) |
+| `MaxConcurrentRequests` | Maximum parallel item requests during a refresh |
+| `BestStoriesCacheDuration` | How long the sorted list is cached |
+| `StoryCacheDuration` | How long an individual story is cached |
+
 ## Assumptions
 
 - "Best" is the id list from `beststories.json`, re-sorted by score descending (ties by id).
