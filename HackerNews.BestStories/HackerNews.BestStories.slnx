@@ -1,0 +1,25 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../README.md" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Api/">
+    <Project Path="src/Api/HackerNews.BestStories.Api/HackerNews.BestStories.Api.csproj" Id="79788e0d-1180-483e-b740-8c5eafdf6246" />
+  </Folder>
+  <Folder Name="/src/Application/">
+    <Project Path="src/Application/HackerNews.BestStories.Application/HackerNews.BestStories.Application.csproj" Id="5d90abd4-1082-450b-8ea8-9a0ba37e412b" />
+  </Folder>
+  <Folder Name="/src/Domain/">
+    <Project Path="src/Domain/HackerNews.BestStories.Domain/HackerNews.BestStories.Domain.csproj" Id="c47c57ce-8546-4ffc-a58d-987f99066d12" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/HackerNews.BestStories.Infrastructure/HackerNews.BestStories.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/IntegrationTests/">
+    <Project Path="tests/HackerNews.BestStories.IntegrationTests/HackerNews.BestStories.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/UnitTests/">
+    <Project Path="tests/HackerNews.BestStories.UnitTests/HackerNews.BestStories.UnitTests.csproj" />
+  </Folder>
+</Solution>
